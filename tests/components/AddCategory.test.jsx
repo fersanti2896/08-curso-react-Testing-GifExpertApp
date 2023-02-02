@@ -17,7 +17,5 @@ describe('Pruebas en <AddCategory />', () => {
         
         fireEvent.input( input, { target: { value: 'Gokú' } } );
         expect( input.value ).toBe('Gokú');
-        
-        screen.debug();
     });
 });
