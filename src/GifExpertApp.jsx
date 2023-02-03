@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { AddCategory, GifGrid } from './components';
 
 export const GifExpertApp = () => {
-    const [ categories, setCategories ] = useState([ 'Shrek' ]);
+    const [ categories, setCategories ] = useState([ '' ]);
     
     /**
      * Función que agrega una categoría al arreglo de categorías.

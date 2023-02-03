@@ -22,13 +22,13 @@ export const AddCategory = ( { newCategory } ) => {
 
         if( inputValue.trim().length <= 1 ) return;
 
-        newCategory(inputValue.trim());
         setInputValue('');
+        newCategory(inputValue.trim()); 
     }
 
     return (
         <>
-            <form onSubmit={ (event) => onSubmit(event) } >
+            <form onSubmit={ (event) => onSubmit(event) } aria-label="form">
                 <input type="text"
                     placeholder="Buscar Gifs"
                     value={ inputValue }
